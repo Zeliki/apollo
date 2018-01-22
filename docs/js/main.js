@@ -26,8 +26,6 @@ $(document).ready(function(){
 	    if(w > 992) {
 	        menu.removeAttr('style');
 	        pull.removeClass('navigation__toggle-button--active');
-	    } else {
-
 	    }
 	});
 
@@ -73,9 +71,12 @@ $(document).ready(function(){
 });
 
 	// Скрываем меню по клику в области экрана
-	$(document).click(function(event){	   
-		if ($(event.target).closest("#navigation-toggle").length) 
-			return;
-		$("#mobile-nav").slideUp("slow");
-		event.stopPropagation();	 
+	$(document).click(function(event){
+		var w = $(window).width();
+	    if(w < 992) {
+	    	if ($(event.target).closest("#navigation-toggle").length) 
+	    		return;
+	    	$("#mobile-nav").slideUp("slow");
+	    	event.stopPropagation();
+		}	 
 });
