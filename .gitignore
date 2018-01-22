@@ -13,6 +13,7 @@
 node_modules
 dist/
 .tmp/
+docs\bower\bootstrap\docs\4.0\components
 
 # OS or Editor folders
 .DS_Store
