@@ -20,8 +20,7 @@
     "font-awesome": "^4.7.0",
     "zepto": "^1.2.0",
     "gulp": "^4.0.0",
-    "bootstrap-3-grid": "^0.0.1",
-    "bootstrap": "bootstrap-2#^4.0.0"
+    "bootstrap-3-grid": "^0.0.1"
   },
   "devDependencies": {
     "zepto": "^1.2.0",
