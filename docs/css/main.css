@@ -294,7 +294,79 @@
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center;
 }
-/*  base  */
+.benefit-block {
+  padding-bottom: 38px;
+}
+.benefit-block:last-child {
+  padding-bottom: 0;
+}
+@media (min-width: 762px) {
+  .benefit-block:nth-last-child(2) {
+    padding-bottom: 0;
+  }
+  .benefit-block:last-child {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .benefit-block {
+    margin-bottom: 20px;
+  }
+}
+.benefit-block__img {
+  height: 130px;
+  margin-bottom: 18px;
+  display: table;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .benefit-block__img {
+    margin-bottom: 20px;
+  }
+}
+.benefit-block__img div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.benefit-block__img img {
+  display: inline-block;
+}
+.benefit-block__header {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+@media (min-width: 1200px) {
+  .benefit-block__header {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+.benefit-block__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+}
+.service-description__content {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+}
+.service-description__content p {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+.service-description__button-arrow {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icons/arrow-orange.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
 html,
 body {
   height: 100%;
@@ -303,10 +375,77 @@ body {
   line-height: 1.4;
   font-size: 1.6rem;
   /* 10px * 1.6 = 16px */
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans';
   margin: 0;
 }
 /*============================================*/
+.heading {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  margin-top: 0;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .heading {
+    margin-bottom: 40px;
+    font-size: 38px;
+  }
+}
+.heading--smaller-margin {
+  margin-bottom: 20px;
+}
+.heading--number:before {
+  margin-bottom: 20px;
+  height: 26px;
+  width: 26px;
+  display: block;
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+  background-color: #FFC80A;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 2px;
+  padding-left: 10px;
+  position: absolute;
+  left: -13px;
+  top: -40px;
+  content: "0";
+}
+@media (min-width: 1200px) {
+  .heading--number:before {
+    left: -32px;
+    top: -30px;
+  }
+}
+.heading--number-1:before {
+  content: "1";
+}
+.heading--number-2:before {
+  content: "2";
+}
+.benefits-section {
+  padding-top: 60px;
+  padding-bottom: 67px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .benefits-section {
+    padding-bottom: 0;
+  }
+}
+.freelance-section {
+  padding-top: 70px;
+  padding-bottom: 67px;
+}
+@media (min-width: 992px) {
+  .freelance-section {
+    padding-bottom: 0;
+  }
+}
 .block {
   background: #b2dbbf;
   padding: 20px;
@@ -323,7 +462,6 @@ body {
 .footer {
   background-color: #252525;
 }
-/*============================================*/
 /*  untils  */
 /*
  * Box-sizing-model

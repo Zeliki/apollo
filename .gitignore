@@ -11,7 +11,7 @@
 *~
 *.saas-cache
 node_modules
-dist/
+
 .tmp/
 docs\bower\bootstrap\docs\4.0\components
 
