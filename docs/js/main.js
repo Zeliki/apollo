@@ -67,7 +67,7 @@ $(document).ready(function(){
 		theme: "top-slider-theme",
 		navigationText : ["",""],
 		slideSpeed: 600
-	});	
+	});		
 });
 
 	// Скрываем меню по клику в области экрана

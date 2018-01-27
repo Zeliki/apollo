@@ -11,15 +11,15 @@
     <meta name="description" content="Описание страницы...">
 
 	<!-- Syles -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">	
-	<link rel="stylesheet" href="bower/bootstrap-3-grid/bootstrap-3-grid.css">
 	<link rel="stylesheet" href="fonts/noto/noto.css">
     <link rel="stylesheet" href="fonts/notoserif/notoserif.css">
     <link rel="stylesheet" href="fonts/als-rubl/als-rubl.css">
     <link rel="stylesheet" href="fonts/montserrat/montserrat.css">
 
     <!-- Owl Carousel -->
-    <link rel="stylesheet" href="bower/owlcarousel/owl-carousel/owl.carousel.css">    
+    <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.css">    
 
 	<!-- FavIcons -->
 	<link rel="shortcut icon" href="img/favicons/favicon-48x48.ico"  type="image/x-icon" />
@@ -54,7 +54,7 @@
     	<div class="container container--mobile--no-padding">        
              <ul id="mobile-nav" class="mobile-navigation__list">
                <li class="mobile-navigation__list-item"><a href="#top">главная</a></li>
-               <li class="mobile-navigation__list-item"><a href="#howwework">как-мы-работаем</a></li>
+               <li class="mobile-navigation__list-item"><a href="#howwework">как мы работаем</a></li>
                <li class="mobile-navigation__list-item"><a href="#freelance">фрилансерам</a></li>
                <li class="mobile-navigation__list-item"><a href="#startup">стартапам</a></li>
                <li class="mobile-navigation__list-item"><a href="#tarif">тарифы</a></li>
@@ -146,7 +146,7 @@
 	<!-- // Slider -->
 
 	<!-- How we work -->
-	<div id="howwework" class="container benefits-section">
+	<div id="howwework" class="container text-center section">
 		<div class="heading">Как мы работаем</div>
 		<div class="row">
 			<div class="col-sm-6 col-lg-3 benefit-block">
@@ -192,14 +192,14 @@
 	<div class="line"></div>
 
 	<!-- Freelance Hosting -->
-	<div id="freelance" class="container freelance-section service-description">
+	<div id="freelance" class="container section section--p-t-70 section--m-p-b-0 service-description">
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="service-description__img">
 					<img src="img/img/notebook.png" alt="Хостинг для фрилансеров">
 				</div>	
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-6 col-sm-6-tx">
 
 				<h2 class="heading heading--smaller-margin heading--number heading--number-1">Хостинг для фрилансеров</h2>	
 
@@ -218,14 +218,14 @@
 	<div class="line"></div>
 
 	<!-- Startup Hosting -->
-	<div id="startup" class="container freelance-section service-description">
+	<div id="startup" class="container section section--p-t-70 section--m-p-b-0 service-description">
 		<div class="row">
 			<div class="col-sm-6 col-sm-push-6">
-				<div class="service-description__img">
+				<div class="service-description__img service-description__img--xs-m-b-40">
 					<img src="img/img/rocket.png" alt="Тариф для стартапов">
 				</div>	
 			</div>
-			<div class="col-sm-6 col-sm-pull-6">
+			<div class="col-sm-6 col-sm-pull-6 col-sm-6-tx">
 
 				<h2 class="heading heading--smaller-margin heading--number heading--number-2">Тариф для стартапов</h2>
 
@@ -244,33 +244,125 @@
 	<div class="line"></div>
 
 	<!-- Prices -->
-	<div id="tarif" class="container">
-		<div class="block">Тарифы и пакеты</div>
+	<div id="tarif" class="container section">
+
 		<div class="row">
-			<div class="col-sm-4"><div class="block">Тариф 1</div></div>
-			<div class="col-sm-4"><div class="block">Тариф 2</div></div>
-			<div class="col-sm-4"><div class="block">Тариф 3</div></div>
+			<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 text-center">
+				<h3 class="heading heading--smaller-margin">Тарифы и пакеты</h3>
+				<p class="subtitle_text">Everyone that enters through Him is always safe and the person shall find pastures for himself.</p>	
+			</div>			
+		</div>
+
+		<div class="row">
+
+			<!-- Plans 1 -->			
+			<div class="col-sm-4">
+				<div class="plans">
+					<div class="package__type">фриланс</div>
+					<div class="package__price">590</div>
+					<div class="package__period">оплата в месяц</div>
+					<div class="package__benefits">
+						<ul>
+							<li>10 GB Disk Space</li>
+							<li>5 Sub Domains</li>
+							<li>4 Databases</li>
+							<li>Unlimited Users</li>
+						</ul>
+					</div>				
+					<a href="#" class="button">начать</a>
+				</div>		
+			</div>
+			<!-- // Plans 1 -->
+
+			<!-- Plans 2 -->			
+			<div class="col-sm-4">
+				<div class="plans">
+					<div class="package__type">стартап</div>
+					<div class="package__price">990</div>
+					<div class="package__period">оплата в месяц</div>
+					<div class="package__benefits">
+						<ul>
+							<li>100 GB Disk Space</li>
+							<li>100 Sub Domains</li>
+							<li>100 Databases</li>
+							<li>Unlimited Users</li>
+						</ul>
+					</div>				
+					<a href="#" class="button button--orange">попробовать</a>
+				</div>		
+			</div>
+			<!-- // Plans 2 -->
+
+			<!-- Plans 3 -->			
+			<div class="col-sm-4">
+				<div class="plans last">
+					<div class="package__type">highload</div>
+					<div class="package__price">~6900</div>
+					<div class="package__period">оплата в месяц</div>
+					<div class="package__benefits">
+						<ul>
+							<li>1000 GB Disk Space</li>
+							<li>∞ Sub Domains</li>
+							<li>∞ Databases</li>
+							<li>Unlimited Users</li>
+						</ul>
+					</div>				
+					<a href="#" class="button">начать</a>
+				</div>		
+			</div>
+			<!-- // Plans 3 -->
+
 		</div>
 	</div>
 	<!-- // Prices -->
 
 	<!-- Footer-->
-	<div class="footer">
+	<div class="footer section" id="contacts">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-4 col-lg-3"><div class="block">Ячейка 1</div></div>
-				<div class="col-sm-4 col-lg-3"><div class="block">Ячейка 2</div></div>
-				<div class="col-sm-4 col-lg-3"><div class="block">Ячейка 3</div></div>
-			</div>
-			<div class="block">© Копирайт</div>
+			<nav class="row">
+
+				<div class="col-sm-4 col-lg-3">
+					<div class="footer__title">продукт</div>
+					<ul class="footer__nav">
+						<li><a href="#">Business</a></li>
+						<li><a href="#">Compare</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Pricing</a></li>
+					</ul>				
+				</div>
+
+				<div class="col-sm-4 col-lg-3">
+					<div class="footer__title">о компании</div>
+					<ul class="footer__nav">
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Press Releases</a></li>
+						<li><a href="#">Jobs</a></li>
+					</ul>				
+				</div>
+
+				<div class="col-sm-4 col-lg-3">
+					<div class="footer__title">поддержка</div>
+					<ul class="footer__nav">					
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Developers</a></li>
+						<li><a href="#">Customer Service</a></li>
+						<li><a href="#">Ger Started Guide</a></li>
+					</ul>				
+				</div>
+
+			</nav>
+
+			<p>© 2016 Аполло 404. Все права защищены.</p>
 		</div>
 	</div>
     <!-- //Footer-->
 	
 
 	<!-- Vendors scripts -->
-	<script src="bower/jquery/dist/jquery.min.js"></script>
-	<script src="bower/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/owlcarousel/owl.carousel.min.js"></script>
 
 	<!-- User script -->
 	<script src="js/main.js"></script>

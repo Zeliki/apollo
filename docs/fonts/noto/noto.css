@@ -2,7 +2,7 @@
     font-family: 'Noto Sans';
     src: local('Noto Sans'), local('NotoSans'), url('notosans.woff2') format('woff2'), url('notosans.woff') format('woff'), url('notosans.ttf') format('truetype');
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
 }
 /*
 @font-face {
