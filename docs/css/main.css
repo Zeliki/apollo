@@ -618,6 +618,9 @@ textarea {
   line-height: 24px;
   color: #777;
 }
+.service-description__img {
+  padding-right: 80px;
+}
 .col-sm-6-tx {
   padding-top: 30px;
 }
