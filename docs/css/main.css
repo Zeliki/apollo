@@ -143,16 +143,32 @@ textarea {
   content: "2";
 }
 .section {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 50px;
+}
+.section--sm-p-t-50 {
+  padding-top: 50px;
 }
 @media (min-width: 1170px) {
   .section {
+    padding-top: 70px;
     padding-bottom: 70px;
   }
 }
-.section--p-t-70 {
-  padding-top: 70px;
+@media (min-width: 768px) {
+  .section--p-t-70 {
+    padding-top: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .section--md-p-b-100 {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .section--lg-p-b-90 {
+    padding-bottom: 90px;
+  }
 }
 .plans {
   text-align: center;
@@ -613,11 +629,16 @@ textarea {
 }
 .service-description__img {
   padding-right: 70px;
-  padding-top: 30px;
 }
 @media (min-width: 1170px) {
   .service-description__img {
     padding-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .service-description__img--md-i-c {
+    text-align: center;
+    padding-right: 0;
   }
 }
 .col-sm-6-tx {

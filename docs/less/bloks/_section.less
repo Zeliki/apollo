@@ -1,14 +1,36 @@
 .section {
-	padding-top: 60px;
+	padding-top: 40px;
 	padding-bottom: 50px;
 	
+	&--sm-p-t-50 {
+		padding-top: 50px;		
+	}
+	
 	@media (min-width: 1170px) {
+		padding-top: 70px;			
 		padding-bottom: 70px;
 	}
 	
 	&--p-t-70 {
-		padding-top: 70px;
+
+		@media (min-width: 768px) {
+			padding-top: 70px;				
+		}
 	}
+
+	&--md-p-b-100 {
+
+		@media (min-width: 768px) {
+			padding-bottom: 100px;				
+		}
+	}
+
+	&--lg-p-b-90 {
+		@media (min-width: 992px) {
+			padding-bottom: 90px;				
+		};			
+	}
+}
 	
 	// &--m-p-b-50 {
 		
@@ -16,4 +38,3 @@
 	// 		padding-bottom: 50px;
 	// 	}
 	// }
-}
