@@ -149,17 +149,10 @@ textarea {
 @media (min-width: 1170px) {
   .section {
     padding-bottom: 70px;
-    padding-right: 0;
-    padding-left: 0;
   }
 }
 .section--p-t-70 {
   padding-top: 70px;
-}
-@media (min-width: 992px) {
-  .section--m-p-b-0 {
-    padding-bottom: 0;
-  }
 }
 .plans {
   text-align: center;
@@ -619,7 +612,13 @@ textarea {
   color: #777;
 }
 .service-description__img {
-  padding-right: 80px;
+  padding-right: 70px;
+  padding-top: 30px;
+}
+@media (min-width: 1170px) {
+  .service-description__img {
+    padding-top: 0;
+  }
 }
 .col-sm-6-tx {
   padding-top: 30px;
